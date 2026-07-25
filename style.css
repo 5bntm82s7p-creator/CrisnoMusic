@@ -285,7 +285,7 @@ button, input {
   box-shadow: var(--shadow);
   background:
     linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.65)),
-    url("assets/center of attention.png") center/cover no-repeat;
+    url("assets/CENTER OF ATTENTION.png") center/cover no-repeat;
 }
 
 .album-art::before,
