@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05070d" />
+  <meta name="description" content="The official website of Crisno — music, visuals, merch, and Center of Attention." />
+  <title>Crisno — Center of Attention</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Crisno home">CRISNO</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#music">Music</a>
+      <a href="#era">The Era</a>
+      <a href="#merch">Merch</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+
+      <div class="hero-copy reveal">
+        <p class="kicker">THE NEW ERA</p>
+        <h1>
+          CENTER<br>
+          <span>OF ATTENTION</span>
+        </h1>
+
+        <p class="hero-sub">
+          Melodic rap, atmospheric R&amp;B, heavy emotion, and hooks built to stay.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#music">Enter the era</a>
+          <a class="btn btn-ghost" href="#merch">Shop first drop</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>CRISNO</span>
+          <span>2026</span>
+          <span>INDEPENDENT</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="album-shell">
+          <div class="album-art" aria-label="Center of Attention album artwork placeholder">
+            <div class="album-glow"></div>
+            <div class="album-title">
+              <small>CRISNO</small>
+              <strong>CENTER<br>OF ATTENTION</strong>
+            </div>
+          </div>
+          <div class="album-shadow"></div>
+        </div>
+
+        <div class="floating-tag tag-one">NEW ALBUM</div>
+        <div class="floating-tag tag-two">AUGUST 2026</div>
+      </div>
+
+      <a class="scroll-cue" href="#music">
+        <span>SCROLL</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="section music-section" id="music">
+      <div class="section-top reveal">
+        <div>
+          <p class="kicker">LATEST MUSIC</p>
+          <h2>Built for replay.</h2>
+        </div>
+        <p class="section-copy">
+          A focused world of falsetto, layered vocals, dark atmosphere, and melodic pressure.
+        </p>
+      </div>
+
+      <div class="featured-track reveal">
+        <div class="track-art mini-art">
+          <span>ATTENTION</span>
+        </div>
+
+        <div class="track-info">
+          <p class="track-label">LEAD SINGLE</p>
+          <h3>ATTENTION <span>ft. Alee</span></h3>
+          <p>
+            “She just wanna be the center of attention…” — the song that opens the door to the entire album.
+          </p>
+
+          <div class="track-actions">
+            <button class="play-btn" id="demoPlay" type="button">
+              <span class="play-icon">▶</span>
+              <span class="play-text">Preview</span>
+            </button>
+            <a href="#" class="text-link">Spotify ↗</a>
+            <a href="#" class="text-link">Apple Music ↗</a>
+            <a href="#" class="text-link">YouTube ↗</a>
+          </div>
+
+          <div class="fake-player">
+            <div class="player-progress"><span id="progressBar"></span></div>
+            <div class="player-times"><span id="currentTime">0:00</span><span>0:30</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-grid">
+        <article class="track-card reveal">
+          <span class="track-number">01</span>
+          <h3>ATTENTION</h3>
+          <p>Emotional R&amp;B / Pop duet</p>
+        </article>
+        <article class="track-card reveal">
+          <span class="track-number">02</span>
+          <h3>MVP</h3>
+          <p>Bouncy melodic rap</p>
+        </article>
+        <article class="track-card reveal">
+          <span class="track-number">03</span>
+          <h3>TAKE YOUR TIME</h3>
+          <p>Atmospheric and intimate</p>
+        </article>
+        <article class="track-card reveal">
+          <span class="track-number">04</span>
+          <h3>THOUGHTS</h3>
+          <p>Falsetto-heavy alt R&amp;B</p>
+        </article>
+        <article class="track-card reveal">
+          <span class="track-number">05</span>
+          <h3>YOU DON'T</h3>
+          <p>80s synth R&amp;B</p>
+        </article>
+        <article class="track-card reveal">
+          <span class="track-number">06</span>
+          <h3>WAY TOO GONE</h3>
+          <p>Fast, bright, and urgent</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="era-section" id="era">
+      <div class="era-sticky">
+        <p class="kicker">THE ERA</p>
+        <h2 class="reveal">Not a playlist.<br>A full identity.</h2>
+      </div>
+
+      <div class="era-cards">
+        <article class="era-card reveal">
+          <span>01</span>
+          <h3>Blue after midnight</h3>
+          <p>Cold light, black space, blurred memories, and the feeling of being watched.</p>
+        </article>
+        <article class="era-card reveal">
+          <span>02</span>
+          <h3>Voice as texture</h3>
+          <p>Falsetto, runs, harmonies, delays, and layers that move around the listener.</p>
+        </article>
+        <article class="era-card reveal">
+          <span>03</span>
+          <h3>Hooks over everything</h3>
+          <p>Every song needs a moment people can quote, replay, and sing back immediately.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section merch-section" id="merch">
+      <div class="section-top reveal">
+        <div>
+          <p class="kicker">FIRST DROP</p>
+          <h2>Wear the era.</h2>
+        </div>
+        <p class="section-copy">Start small. Make every piece feel intentional.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="product-visual tee-visual">
+            <div class="shirt-shape">
+              <span>CRISNO</span>
+            </div>
+            <span class="product-badge">01</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Center of Attention Tee</h3>
+              <p>Black heavyweight tee · blue front mark · oversized back graphic</p>
+            </div>
+            <strong>$28</strong>
+          </div>
+          <a href="#" class="btn btn-dark">Coming soon</a>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-visual hoodie-visual">
+            <div class="hoodie-shape">
+              <span>COA</span>
+            </div>
+            <span class="product-badge">02</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>COA Hoodie</h3>
+              <p>Heavyweight hoodie · sleeve branding · reflective details</p>
+            </div>
+            <strong>$52</strong>
+          </div>
+          <a href="#" class="btn btn-dark">Coming soon</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-panel reveal">
+        <p class="kicker">ABOUT CRISNO</p>
+        <h2>Melody first.<br>Atmosphere always.</h2>
+        <p>
+          Crisno is an independent artist blending melodic rap, emotional R&amp;B, pop instincts,
+          layered vocals, and cinematic production. Center of Attention marks the beginning of a
+          sharper, more cohesive world.
+        </p>
+        <div class="stats">
+          <div><strong>300+</strong><span>songs created</span></div>
+          <div><strong>6–8</strong><span>years in music</span></div>
+          <div><strong>1</strong><span>new era</span></div>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="portrait-frame">
+          <div class="portrait-placeholder">
+            <span>ADD YOUR PHOTO<br>AS assets/artist.jpg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-orb"></div>
+      <div class="contact-content reveal">
+        <p class="kicker">STAY LOCKED IN</p>
+        <h2>Be there before<br>everybody else.</h2>
+        <p>Music, visuals, merch drops, and performance updates.</p>
+
+        <form class="email-form" onsubmit="return false;">
+          <input type="email" placeholder="Email address" aria-label="Email address" />
+          <button type="submit">Join the list</button>
+        </form>
+
+        <div class="social-row">
+          <a href="#">TikTok</a>
+          <a href="#">Instagram</a>
+          <a href="#">Spotify</a>
+          <a href="#">YouTube</a>
+          <a href="mailto:yourbusiness@email.com">Business</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> CRISNO</span>
+    <span>CENTER OF ATTENTION</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
